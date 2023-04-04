@@ -1,0 +1,36 @@
+#预训练模型cswin
+        # use_ema = False
+        # checkpoint_path = '/data/huiminwang/code/human-parsing-LQZ/data/cswin_tiny_224.pth'
+        
+        # checkpoint = torch.load(checkpoint_path, map_location='cpu')
+        # state_dict_key = 'state_dict'
+        # model_key = 'model'
+        # if isinstance(checkpoint, dict):
+        #     if use_ema and 'state_dict_ema' in checkpoint:
+        #         state_dict_key = 'state_dict_ema'
+        # if state_dict_key and state_dict_key in checkpoint:
+        #     new_state_dict = OrderedDict()
+        #     for k, v in checkpoint[state_dict_key].items():
+        #         # strip `module.` prefix
+        #         name = k[7:] if k.startswith('module') else k
+        #         if True and 'head' in k:
+        #             continue
+        #         new_state_dict[name] = v
+        #     state_dict = new_state_dict
+        # elif model_key and model_key in checkpoint:
+        #     new_state_dict = OrderedDict()
+        #     for k, v in checkpoint[model_key].items():
+        #         # strip `module.` prefix
+        #         name = k[7:] if k.startswith('module') else k
+        #         if True and 'head' in k:
+        #             continue
+        #         new_state_dict[name] = v
+        #     state_dict = new_state_dict
+
+        # else:
+        #     state_dict = checkpoint
+        # model_dict = self.transformer.state_dict()
+        # pretrained_dict = state_dict
+        # loaded_dict = {k: v for k, v in pretrained_dict.items() if k in model_dict}
+        # model_dict.update(loaded_dict)
+        # self.transformer.load_state_dict(model_dict, strict=True)
